@@ -18,14 +18,18 @@
 </template>
 
 <script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 // 登录按钮点击事件
 const handleLogin = () => {
-  console.log('点击了登录按钮');
+  router.push('/login-form')
 }
 
 // 注册按钮点击事件
 const handleRegister = () => {
-  console.log('点击了注册按钮');
+  router.push('/register')
 }
 </script>
 
@@ -62,22 +66,30 @@ const handleRegister = () => {
 
 /* 按钮样式（匹配国风边框） */
 .auth-button {
-  width: 300px;
-  height: 80px;
-  background: transparent;
-  border: 2px solid #8b7355; /* 国风棕色边框 */
-  border-radius: 4px;
-  font-size: 24px;
-  color: #333;
-  cursor: pointer;
-  font-family: "SimSun", "宋体", serif;
-  transition: all 0.3s ease;
-  /* 如需按钮边框图，取消下面注释并替换路径 */
-  background-image: url('@/assets/images/文本框2.jpgbutton-frame.png');
+  width: 320px;
+  height: 110px;  
+
+  border: none;
+  outline: none;
+
+  background: url('/src/assets/images/文本框2.jpg') no-repeat center;
   background-size: 100% 100%;
+
+  /* 文字居中 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 26px;
+  color: #333;
+  font-family: "SimSun", "宋体", serif;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .auth-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  filter: brightness(1.05);
 }
 </style>
