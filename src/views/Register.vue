@@ -63,10 +63,11 @@ const handleConfirm = () => {
     return
   }
   console.log('点击了确认按钮', { username: username.value, password: password.value })
+  router.push('/menu')
 }
 
 const handleBack = () => {
-  router.push('/')
+  router.push('/login')
 }
 </script>
 

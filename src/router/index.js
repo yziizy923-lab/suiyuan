@@ -16,7 +16,7 @@ const router = createRouter({
       component: VideoIntro,
     },
     {
-      path: '/liuhen',
+      path: '/garden-trace',
       name: 'liuhen',
       component: Liuhen,
     },
