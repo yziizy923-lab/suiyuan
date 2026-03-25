@@ -17,16 +17,19 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0 !important; 
-  padding: 0 !important;
-}
-
-/* 根容器 #app 必须占满全屏，无任何边距 */
-#app {
-  width: 100%; 
-  height: 100%;
   margin: 0 !important;
   padding: 0 !important;
   overflow: hidden;
+}
+
+/* 根容器 #app 撑满整个视口，自身可滚动 */
+#app {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 </style>
