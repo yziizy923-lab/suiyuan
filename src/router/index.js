@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import VideoIntro from '../views/VideoIntro.vue'
+import Liuhen from '../views/Liuhen.vue'
 import Login from '../views/Login.vue'
 import LoginForm from '../views/LoginForm.vue'
 import Register from '../views/Register.vue'
@@ -8,6 +10,16 @@ const router = createRouter({
   routes: [
     {
       path: '/',
+      name: 'videoIntro',
+      component: VideoIntro,
+    },
+    {
+      path: '/liuhen',
+      name: 'liuhen',
+      component: Liuhen,
+    },
+    {
+      path: '/login',
       name: 'login',
       component: Login,
     },
