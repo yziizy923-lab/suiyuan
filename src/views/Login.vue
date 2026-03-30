@@ -24,7 +24,7 @@ const router = useRouter()
 
 // 登录按钮点击事件
 const handleLogin = () => {
-  router.push('/login-form')
+  router.push('/loginform')
 }
 
 // 注册按钮点击事件
@@ -48,7 +48,7 @@ const handleRegister = () => {
   width: 100%;
   height: 100%;
   /* 替换为你的背景图路径 */
-  background: url('@/assets/images/bg1.jpg') no-repeat center center;
+  background: url('@/assets/images/bg_login.jpg') no-repeat center center;
   background-size: cover; /* 关键：背景图拉伸铺满 */
 
   display: flex;

@@ -6,6 +6,9 @@ import LoginForm from '../views/LoginForm.vue'
 import Register from '../views/Register.vue'
 import AboutUs from '../views/AboutUs.vue'
 import Menu from '../views/Menu.vue'
+import PersonalCenter from '../views/PersonalCenter.vue'
+import Test from '../views/Test.vue'
+import History from '../views/History.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,7 +19,7 @@ const router = createRouter({
       component: VideoIntro,
     },
     {
-      path: '/garden-trace',
+      path: '/liuhen',
       name: 'liuhen',
       component: Liuhen,
     },
@@ -26,7 +29,7 @@ const router = createRouter({
       component: Login,
     },
     {
-      path: '/login-form',
+      path: '/loginform',
       name: 'loginForm',
       component: LoginForm,
     },
@@ -44,7 +47,7 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
-      path: '/about-us',
+      path: '/aboutus',
       name: 'aboutUs',
       component: AboutUs,
     },
@@ -52,6 +55,42 @@ const router = createRouter({
       path: '/menu',
       name: 'menu',
       component: Menu,
+    },
+    {
+      path: '/personal',
+      name: 'personal',
+      component: PersonalCenter,
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: Test,
+    },
+    {
+      path: '/history',
+      name: 'history',
+      component: History,
+      children: [
+        {
+          path: '',
+          redirect: '/history/life'
+        },
+        {
+          path: 'life',
+          name: 'historyLife',
+          component: History,
+        },
+        {
+          path: 'food',
+          name: 'historyFood',
+          component: History,
+        },
+        {
+          path: 'poetry',
+          name: 'historyPoetry',
+          component: History,
+        },
+      ],
     },
   ],
 })

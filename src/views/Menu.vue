@@ -7,11 +7,11 @@
       <img class="menu-illustration" src="@/assets/images/插画一.png" alt="Illustration" />
       <div class="illustration-text">
         <router-link to="/garden-spring" class="menu-text">园筑春秋</router-link>
-        <router-link to="/garden-records" class="menu-text">随园典册</router-link>
+        <router-link to="/history" class="menu-text">随园典册</router-link>
         <router-link to="/garden-wander" class="menu-text">随园漫游</router-link>
-        <router-link to="/garden-study" class="menu-text">园筑小考</router-link>
-        <router-link to="/garden-trace" class="menu-text">随园留痕</router-link>
-        <router-link to="/user-center" class="menu-text">个人中心</router-link>
+        <router-link to="/test" class="menu-text">园筑小考</router-link>
+        <router-link to="/liuhen" class="menu-text">随园留痕</router-link>
+        <router-link to="/personal" class="menu-text">个人中心</router-link>
       </div>
     </div>
   </div>

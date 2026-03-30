@@ -70,7 +70,7 @@ const handleBack = () => {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('@/assets/images/bg1.jpg') no-repeat center center;
+  background: url('@/assets/images/bg_login.jpg') no-repeat center center;
   background-size: cover;
 
   display: flex;
