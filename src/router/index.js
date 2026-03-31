@@ -9,6 +9,8 @@ import Menu from '../views/Menu.vue'
 import PersonalCenter from '../views/PersonalCenter.vue'
 import Test from '../views/Test.vue'
 import History from '../views/History.vue'
+import Travel from '../views/Travel.vue'
+import LocationDetail from '../views/LocationDetail.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,6 +67,16 @@ const router = createRouter({
       path: '/test',
       name: 'test',
       component: Test,
+    },
+    {
+      path: '/travel',
+      name: 'travel',
+      component: Travel,
+    },
+    {
+      path: '/location/:id',
+      name: 'locationDetail',
+      component: LocationDetail,
     },
     {
       path: '/history',
