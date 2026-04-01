@@ -67,6 +67,19 @@ const router = createRouter({
       component: Test,
     },
     {
+<<<<<<< Updated upstream
+=======
+      path: '/travel',
+      name: 'travel',
+      component: Travel,
+    },
+    {
+      path: '/location',
+      name: 'locationDetail',
+      component: LocationDetail,
+    },
+    {
+>>>>>>> Stashed changes
       path: '/history',
       name: 'history',
       component: History,

@@ -19,7 +19,7 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 const videoRef = ref(null)
-const videoSrc = '/src/assets/vedios/网页封面.mp4'
+const videoSrc = '/src/assets/videos/网页封面.mp4'
 
 const tryPlay = () => {
   if (videoRef.value) {
