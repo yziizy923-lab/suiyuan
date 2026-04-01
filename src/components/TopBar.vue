@@ -6,7 +6,7 @@
     <!-- 右上角：导航 + 喇叭 -->
     <div class="top-bar__right">
       <router-link to="/menu" class="top-bar__link">首页</router-link>
-      <router-link to="/about-us" class="top-bar__link">关于我们</router-link>
+      <router-link to="/aboutus" class="top-bar__link">关于我们</router-link>
 
       <!-- 喇叭：点击切换音乐 -->
       <div class="top-bar__sound-wrapper" @click="toggleMusic" title="点击切换背景音乐">
